@@ -13,7 +13,7 @@ pipeline{
  stage('build'){
 steps{
 script{
-sudo -i
+sh "sudo -i"
 sh "ansible-playbook ansible/build.yml  -i ansible/inventory/host.yml " 
 }
 }
